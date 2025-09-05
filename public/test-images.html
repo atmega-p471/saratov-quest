@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест изображений Саратов Quest</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .test-image { max-width: 300px; margin: 10px; border: 2px solid #ddd; }
+        .background-test { 
+            width: 400px; 
+            height: 200px; 
+            border: 2px solid #ddd;
+            background: url('./images/saratov-bridge.jpg') center/cover no-repeat;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Тест загрузки изображений</h1>
+    
+    <div class="test-section">
+        <h2>🌉 Фоновое изображение моста</h2>
+        <div class="background-test"></div>
+        <p>Путь: <code>/images/saratov-bridge.jpg</code></p>
+    </div>
+    
+    <div class="test-section">
+        <h2>🏛️ Герб Саратовской области</h2>
+        <img src="./images/saratov-coat-of-arms.png" alt="Герб" class="test-image" id="coat-img">
+        <p>Путь: <code>/images/saratov-coat-of-arms.png</code></p>
+        <p id="coat-status">Загружается...</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>📁 Все файлы в папке images:</h2>
+        <ul>
+            <li><a href="./images/saratov-bridge.jpg" target="_blank">saratov-bridge.jpg</a></li>
+            <li><a href="./images/saratov-coat-of-arms.png" target="_blank">saratov-coat-of-arms.png</a></li>
+            <li><a href="./images/bridge-placeholder.svg" target="_blank">bridge-placeholder.svg</a></li>
+            <li><a href="./images/coat-of-arms-placeholder.svg" target="_blank">coat-of-arms-placeholder.svg</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const coatImg = document.getElementById('coat-img');
+        const coatStatus = document.getElementById('coat-status');
+        
+        coatImg.onload = function() {
+            coatStatus.innerHTML = '<span class="success">✅ Герб загружен успешно!</span>';
+        };
+        
+        coatImg.onerror = function() {
+            coatStatus.innerHTML = '<span class="error">❌ Ошибка загрузки герба</span>';
+        };
+    </script>
+</body>
+</html>
