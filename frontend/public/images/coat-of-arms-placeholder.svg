@@ -1,0 +1,56 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crown-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wheat-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer decorative border -->
+  <circle cx="128" cy="128" r="120" fill="#2C3E50" stroke="#F39C12" stroke-width="4"/>
+  
+  <!-- Wheat wreath left -->
+  <path d="M40 80 Q50 100 40 120 Q60 140 40 160 Q50 180 40 200" stroke="url(#wheat-gradient)" stroke-width="8" fill="none"/>
+  <path d="M50 85 L60 90 L55 95 Z M50 105 L60 110 L55 115 Z M50 125 L60 130 L55 135 Z M50 145 L60 150 L55 155 Z M50 165 L60 170 L55 175 Z M50 185 L60 190 L55 195 Z" fill="url(#wheat-gradient)"/>
+  
+  <!-- Wheat wreath right -->
+  <path d="M216 80 Q206 100 216 120 Q196 140 216 160 Q206 180 216 200" stroke="url(#wheat-gradient)" stroke-width="8" fill="none"/>
+  <path d="M206 85 L196 90 L201 95 Z M206 105 L196 110 L201 115 Z M206 125 L196 130 L201 135 Z M206 145 L196 150 L201 155 Z M206 165 L196 170 L201 175 Z M206 185 L196 190 L201 195 Z" fill="url(#wheat-gradient)"/>
+  
+  <!-- Shield -->
+  <path d="M128 40 L180 60 L180 120 C180 160 128 200 128 200 C128 200 76 160 76 120 L76 60 Z" fill="url(#shield-bg)" stroke="#F39C12" stroke-width="3"/>
+  
+  <!-- Sturgeon (stylized) -->
+  <ellipse cx="128" cy="110" rx="35" ry="12" fill="white" opacity="0.9"/>
+  <path d="M100 110 L93 105 L100 115 Z" fill="white" opacity="0.9"/>
+  <path d="M156 110 L163 105 L156 115 Z" fill="white" opacity="0.9"/>
+  <circle cx="120" cy="108" r="2" fill="#2C3E50"/>
+  <circle cx="136" cy="108" r="2" fill="#2C3E50"/>
+  
+  <!-- Fish fins -->
+  <path d="M110 120 L105 130 L115 125 Z" fill="white" opacity="0.7"/>
+  <path d="M146 120 L151 130 L141 125 Z" fill="white" opacity="0.7"/>
+  
+  <!-- Crown -->
+  <path d="M108 50 L118 65 L128 50 L138 65 L148 50 L145 80 L111 80 Z" fill="url(#crown-gradient)" stroke="#B8860B" stroke-width="1"/>
+  <circle cx="113" cy="50" r="3" fill="#FFD700"/>
+  <circle cx="123" cy="45" r="3" fill="#FFD700"/>
+  <circle cx="133" cy="45" r="3" fill="#FFD700"/>
+  <circle cx="143" cy="50" r="3" fill="#FFD700"/>
+  
+  <!-- Ribbon at bottom -->
+  <path d="M90 210 Q128 220 166 210 Q160 230 128 225 Q96 230 90 210" fill="url(#wheat-gradient)" stroke="#B8860B" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="128" y="245" font-family="serif" font-size="14" fill="#F39C12" text-anchor="middle" font-weight="bold">
+    ГЕРБ САРАТОВСКОЙ ОБЛАСТИ
+  </text>
+</svg>

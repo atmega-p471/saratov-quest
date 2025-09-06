@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Кастомные стили для Material-UI Paper */
+.css-sr6z1g-MuiPaper-root {
+  background-color: #ffffff !important; /* белый фон */
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Альтернативный селектор для Paper с этим цветом */
+.css-157tdv1-MuiTypography-root {
+  color: #10a7c5 !important;
+}
+
+/* Класс для пользовательских сообщений с нежно-голубым фоном */
+.user-message-light-blue {
+  background-color: #E3F2FD !important; /* нежно-голубой */
+  border: 1px solid #BBDEFB !important;
+  color: #1565C0 !important; /* темно-синий текст для контраста */
+}
+
+/* Стиль для времени в пользовательских сообщениях */
+.user-message-light-blue .MuiTypography-caption {
+  color: #1976D2 !important; /* синий цвет для времени в пользовательских сообщениях */
+  opacity: 0.8 !important;
+}
+
+/* Предотвращение переполнения текста после увеличения шрифтов */
+.MuiTypography-root {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.MuiCard-root .MuiCardContent-root {
+  overflow: hidden;
+}
+
+.MuiPaper-root {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Скрытие атрибуции Leaflet */
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+/* Стили для кастомных маркеров на карте */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-marker div {
+  transition: transform 0.2s ease;
+}
+
+.custom-marker:hover div {
+  transform: scale(1.2);
+}

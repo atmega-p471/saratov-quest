@@ -1,0 +1,53 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="night-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a294a;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#243955;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#34495e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Night sky -->
+  <rect width="1920" height="600" fill="url(#night-sky)"/>
+  
+  <!-- Water -->
+  <rect y="600" width="1920" height="480" fill="url(#water)"/>
+  
+  <!-- Bridge structure -->
+  <path d="M0 400 L480 380 L960 360 L1440 380 L1920 400" stroke="#f4d443" stroke-width="12" fill="none"/>
+  
+  <!-- Bridge arches -->
+  <path d="M240 400 L360 300 L480 400" stroke="#f4d443" stroke-width="6" fill="none"/>
+  <path d="M600 400 L720 300 L840 400" stroke="#f4d443" stroke-width="6" fill="none"/>
+  <path d="M960 400 L1080 300 L1200 400" stroke="#f4d443" stroke-width="6" fill="none"/>
+  <path d="M1320 400 L1440 300 L1560 400" stroke="#f4d443" stroke-width="6" fill="none"/>
+  
+  <!-- Bridge lights -->
+  <circle cx="240" cy="380" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="480" cy="360" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="720" cy="360" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="960" cy="340" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="1200" cy="360" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="1440" cy="380" r="12" fill="#ffd700" opacity="0.9"/>
+  
+  <!-- Light reflections in water -->
+  <ellipse cx="240" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  <ellipse cx="480" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  <ellipse cx="720" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  <ellipse cx="960" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  <ellipse cx="1200" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  <ellipse cx="1440" cy="700" rx="8" ry="60" fill="#ffd700" opacity="0.4"/>
+  
+  <!-- Placeholder text -->
+  <text x="960" y="540" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" opacity="0.8" font-weight="bold">
+    САРАТОВСКИЙ МОСТ
+  </text>
+  <text x="960" y="600" font-family="Arial, sans-serif" font-size="28" fill="#ffd700" text-anchor="middle" opacity="0.7">
+    Замените на реальное фото моста
+  </text>
+</svg>
